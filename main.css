@@ -1,0 +1,39 @@
+.repo-info {
+  margin-top: 24px;
+}
+
+.info-btn {
+  border: 1px solid gray;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.info-btn > span {
+  display: inline-block;
+  padding: 3px 12px;
+}
+
+.info-btn > span:first-of-type {
+  border-right: 1px solid gray;
+}
+
+.info-btn > span:first-of-type:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.info-btn > span:last-of-type:hover {
+  color: blue;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1010px) {
+  .info-btn {
+    width: 50%;
+    text-align: center;
+  }
+
+  .info-btn > span:first-of-type {
+    border-right: none;
+  }
+}
