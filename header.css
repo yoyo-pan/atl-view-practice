@@ -3,7 +3,8 @@
   padding: 12px;
 }
 
-#logo {
+#logo,
+#avatar {
   width: 32px;
   height: 32px;
   border-radius: 10px;
@@ -11,6 +12,47 @@
 
 .desktop-header {
   color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop-header a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 6px;
+}
+
+.desktop-header a:hover {
+  opacity: 0.8;
+}
+
+#search-input {
+  width: 273px;
+  font-size: 12px;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  background-color: hsla(0, 0%, 100%, 0.125);
+  border: 0;
+  box-shadow: none;
+  border-radius: 5px;
+  padding: 3px 12px;
+  color: #ffffff;
+}
+
+#search-input::placeholder {
+  color: #ffffff;
+}
+
+#search-input:focus {
+  width: 400px;
+  outline: none;
+  background-color: #ffffff;
+  color: gray;
+}
+
+#search-input:focus::placeholder {
+  color: gray;
 }
 
 @media screen and (max-width: 1010px) {
