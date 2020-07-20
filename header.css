@@ -1,0 +1,26 @@
+.my-header {
+  background-color: rgb(30, 37, 40);
+  padding: 12px;
+}
+
+#logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+}
+
+.desktop-header {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1010px) {
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile-header > img {
+    width: 24px;
+    height: 24px;
+  }
+}
