@@ -1,0 +1,65 @@
+.my-table,
+.your-table,
+.native-table {
+  border: solid 1px gray;
+  margin: 36px;
+}
+
+.my-table-row {
+  border-bottom: 1px solid gray;
+  margin: 0px;
+  padding: 4px;
+}
+
+.my-table-col {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.your-table-row {
+  display: flex;
+  border-bottom: 1px solid gray;
+  margin: 0px;
+  padding: 4px;
+}
+
+.your-table-col {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.your-table-col:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+.your-table-col.col-large {
+  min-width: 200px;
+}
+
+.your-table-col.col-medium {
+  min-width: 100px;
+}
+
+.your-table-col.col-small {
+  min-width: 50px;
+}
+
+.native-table-td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.native-table-td.td-large {
+  max-width: 400px;
+}
+
+.native-table-td.td-medium {
+  max-width: 200px;
+}
+
+.native-table-td.td-small {
+  max-width: 100px;
+}
